@@ -1,0 +1,20 @@
+[project]
+name = "pipeflow-mcp-server-builder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.12.12",
+    "fastapi>=0.115.12",
+    "numpy>=2.3.0",
+    "pandas>=2.3.0",
+    "pyjwt>=2.10.1",
+    "requests>=2.32.4",
+    "uvicorn>=0.34.3",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
