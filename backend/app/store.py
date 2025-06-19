@@ -18,6 +18,7 @@ class SessionStore:
         self.use_sqlite = use_sqlite
         self.db_path = db_path
         self.user_app_sessions: Dict[str, Dict[str, str]] = {}
+        self.sessions: Dict[str, Dict[str, Any]] = {}  # Initialize sessions dictionary
         self.lock = threading.RLock()
         
         if self.use_sqlite:
